@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mywebapp-pod
+  labels:
+    app: mywebapp
+spec:
+  containers:
+  - name: mywebapp-container
+    image: <your-dockerhub-username>/mywebapp:1.0
+    ports:
+    - containerPort: 80
